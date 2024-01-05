@@ -66,11 +66,11 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function      format              argument */
 	{ uptime,        " [%s]  ",         NULL},
-	{ run_command,   " %s  ",       "amixer sget Master | tail -1 | awk '{print $5 }'"},
+	{ run_command,   " %s  ",           "amixer sget Master | tail -1 | awk '{print $5 }'"},
 	{ cpu_perc,      "󰻠 [%s%%]  ",       NULL},
 	{ ram_perc,      "󰍛 [%s%%]  ",       NULL},
 	// { swap_perc,     "󱁼 [%s%%]  ",       NULL},
-	{ disk_perc,     "󱛟 [%s%%]  ",       "/"},
+	{ run_command,   "󱛟 [%s]  ",         "df | grep /dev/sda2 | awk '{print $5}'"},
 	// { keymap,        " [%s]  ",         NULL},
 	// { wifi_perc,     "󰒢 [%s%%]  ",       "eth0"},
 	{ netspeed_rx,   "󰓅 [%sB/s]  ",      "enp18s0f0u1"},
