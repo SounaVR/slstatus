@@ -1,0 +1,4 @@
+config.h
+util.o
+slstatus
+slstatus.o
