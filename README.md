@@ -15,7 +15,7 @@ cd slstatus
 sudo make install
 ```
 
-Now you can maybe use a `ln` to a folder in your PATH and add it to your startup file once you're done configuring it.
+Now you can use `ln -sf` to a folder in your PATH and add it to your startup file once you're done configuring it.
 
 ### Editing the config 🎨
 

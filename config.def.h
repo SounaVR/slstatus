@@ -64,6 +64,15 @@ static const char unknown_str[] = "n/a";
  * wifi_perc           WiFi signal in percent          interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function format          argument */
-	{ datetime, "%s",           "%F %T" },
+	/* function      format              argument */
+	{ uptime,        " [%s]  ",         NULL},
+	{ run_command,   " %s  ",       "amixer sget Master | tail -1 | awk '{print $5 }'"},
+	{ cpu_perc,      "󰻠 [%s%%]  ",       NULL},
+	{ ram_perc,      "󰍛 [%s%%]  ",       NULL},
+	{ swap_perc,     "󱁼 [%s%%]  ",       NULL},
+	{ disk_perc,     "󱛟 [%s%%]  ",       "/"},
+	{ keymap,        " [%s]  ",         NULL},
+	{ wifi_perc,     "󰒢 [%s%%]  ",       "lo"},
+	{ netspeed_rx,   "󰓅 [%sB/s]  ",      "enp18s0f0u1"},
+	{ datetime,      " [%s]  ",         "%a %b %d %r" }
 };
