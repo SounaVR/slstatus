@@ -69,10 +69,10 @@ static const struct arg args[] = {
 	{ run_command,   " %s  ",       "amixer sget Master | tail -1 | awk '{print $5 }'"},
 	{ cpu_perc,      "󰻠 [%s%%]  ",       NULL},
 	{ ram_perc,      "󰍛 [%s%%]  ",       NULL},
-	{ swap_perc,     "󱁼 [%s%%]  ",       NULL},
+	// { swap_perc,     "󱁼 [%s%%]  ",       NULL},
 	{ disk_perc,     "󱛟 [%s%%]  ",       "/"},
-	{ keymap,        " [%s]  ",         NULL},
-	{ wifi_perc,     "󰒢 [%s%%]  ",       "lo"},
+	// { keymap,        " [%s]  ",         NULL},
+	// { wifi_perc,     "󰒢 [%s%%]  ",       "eth0"},
 	{ netspeed_rx,   "󰓅 [%sB/s]  ",      "enp18s0f0u1"},
 	{ datetime,      " [%s]  ",         "%a %b %d %r" }
 };
